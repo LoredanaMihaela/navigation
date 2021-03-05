@@ -9,45 +9,252 @@
     <meta name="author" content="Loredana Dornescu">
     <meta name="kayword" content="navigation">
     <link rel="stylesheet" href="resources/navigation.css">
+    <link rel="stylesheet" href="library/font-awesome/css/all.css">
     <title>Navigation</title>
 </head>
 
 <body>
     <main class="container">
-        <!--<nav class="top-bar">
-            <ol class="top-bar-nav">
-                <li><a href="shop.html">SHOP</a></li>
-                <li><a href="search.html"><i class="fal fa-search"></i></a></li>
-                <li><a href="shoppingCart.html"><i class="fal fa-shopping-cart"></i></a></li>
-                <li><a href="signiIn"><i class="fal fa-sign-in"></a></i>
-                </li>
-            </ol>
-        </nav>-->
         <aside class="menu">
             <div class="top-logo"><img src="asset/logo-boundary.png" alt="logo"></div>
             <ol class="logo-wrapper">
-                <li class=" logo your-orders-logo"><img src="asset/logo-elite.png" alt="Circle logo"></li>
+                <li class=" logo your-orders-logo"><img src="asset/logo-vip.png" alt="Circle logo"></li>
                 <li class="logo reward-status-logo hidden"><img src="asset/logo-gold.png" alt="Circle logo"></li>
-                <!--<li><img src="asset/logo-member.png" alt="Circle logo"></li>
-                <li><img src="asset/logo-vip.png" alt="Circle logo"></li>-->
+                <li class="logo account-settings-logo hidden"><img src="asset/logo-elite.png" alt="Circle logo"></li>
+                <li class="logo payment-methods-logo hidden"><img src="asset/logo-member.png" alt="Circle logo"></li>
+                <li class="logo order-details-logo hidden"><img src="asset/logo-vip.png" alt="circle logo"></li>
             </ol>
             <ol class="menu-list">
-                <li><a class="menu-item selected" data-content="your-orders-container" data-logo="your-orders-logo">Your Orders</a></li>
+                <li><a class="menu-item selected" data-content="order-details-container" data-logo="your-orders-logo">Your Orders</a></li>
                 <li><a class="menu-item " data-content="reward-status-container" data-logo="reward-status-logo">Reward Status</a></li>
+                <li><a class="menu-item" data-content="account-settings-container" data-logo="account-settings-logo">Account Settings</a></li>
+                <li><a class="menu-item" data-content="payment-methods-container" data-logo="payment-methods-logo">Payment Methods</a></li>
+                <li><a href="singOut">Sign out</a></li>
             </ol>
-
         </aside>
         <section>
+            <nav class="top-bar">
+                <ol class="top-bar-nav">
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="search.html"><i class="fas fa-search"></i></a></li>
+                    <li><a class="menu-item" data-content="your-orders-container" data-logo="your-orders-logo"><i class="fab fa-shopify"></i></i></a></li>
+                    <li><a href="signiIn"><i class="fas fa-sign-in-alt"></i></a></i>
+                    </li>
+                </ol>
+            </nav>
             <div class="content your-orders-container">
-                <p> YourOrders </p>
+                <h1>
+                    <p>Your</p>
+                    <p>Orders</p>
+                </h1>
+                <div class="your-order-wrapper">
+                    <div class="your-order-img">
+                        <img src="asset/product.png" alt="">
+                    </div>
+                    <div class="your-order-table">
+                        <table style="width: 90%;">
+                            <tr>
+                                <td style="width: 90%;
+                                            display: flex;
+                                            justify-content: space-between;">
+                                    April 1,2019
+                                    <p class="text-table">Processing</p>
+                                    <p>Order Details <br> Cancel/Modify</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Order #
+                                    <p>30004</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Order Total
+                                    <p>$324.96</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top:37px ;">Also in this order</td>
+                            </tr>
+                            <tr>
+                                <td style="display: flex;">
+                                    <div class="item-imp-wrapper"><img src="asset/addition-4.png" alt=""></div>
+                                    <div class="item-imp-wrapper"><img src="asset/addition-3.png" alt=""></div>
+                                    <div class="item-imp-wrapper"><img src="asset/addition-1.png" alt=""></div>
+                                    <div class="item-imp-wrapper">
+                                        <h3>+3 <br> more</h3>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
             <div class="content reward-status-container hidden">
-                <p> Reward </p>
+                <h1>
+                    <p>Reward</p>
+                    <p>Status</p>
+                    <table style="width: 80%">
+                        <tr>
+                            <td style="font-size: 20px;
+                                        color: #231f20;
+                                        font-family: laca;
+                                        width: 40%;
+                                        margin-top: 10px;">Activity</td>
+                            <td style="font-size: 20px;
+                                        color: #231f20;
+                                        font-family:laca;
+                                        width: 40%;
+                                        padding-top: 25px;">
+                                <p> VIP </p>
+                                <p> Current Status </p>
+                            </td>
+                            <td style="font-size: 20px;
+                                        color: #231f20;
+                                        font-family: laca;
+                                        padding-top: 25px;">
+                                <p> GOLD</p>
+                                <p> Next Tier</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="font-size: 20px;
+                                        color: #231f20;
+                                        font-family: laca;
+                                        padding-top: 25px;">
+                                <p>$ 678.42</p>
+                                <p>Lifetime Spend</p>
+                            </td>
+                            <td style="font-size: 20px;
+                                        color: #231f20;
+                                        font-family: laca;
+                                        padding-top: 25px;">
+                                <p>$ 321.68</p>
+                                <p>To Gold Status</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="font-size: 20px;
+                                        color: #231f20;
+                                        font-family: laca;
+                                        padding-top: 25px;">
+                                <p>003</p>
+                                <p>Orders</p>
+                            </td>
+                            <td style="font-size: 20px;
+                                        color: #231f20;
+                                        font-family: laca;
+                                        padding-top: 25px;">
+                                <p>007</p>
+                                <p>Referrals</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 20px;
+                                        color: #231f20;
+                                        font-family: laca;
+                                        padding-top: 30px;">Benefits</td>
+                            <td style="width: 20px;
+                                        height: 20px;
+                                        display: flex;">
+                                <div class="icon-img-wrapper"><img src="asset/icon-recurrent.png" alt=""></div>
+                                <div class="icon-img-wrapper"><img src="asset/icon-savings.png" alt=""></div>
+
+                            </td>
+
+                        </tr>
+                    </table>
+                </h1>
+            </div>
+            <div class="content account-settings-container hidden">
+                <h1>
+                    <p>Account</p>
+                    <p>Settings</p>
+                </h1>
+                <form>
+                    <label for="fullName"></label>
+                    <input type="text" id="fullName" name="fullName" value="Ben Cline">
+                    <label for="phoneNumber"></label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" value="+1 801 641 09">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" value="ben@rallyinteractive.com">
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" min="5" value="**********">
+                    <input type="submit" value="SAVE CHANGES ">
+                </form>
+                <h2>Addresses</h2>
+                <!--cum se poate face ca dupa ce clientul is introduce datale si apasa save,
+                     sa imi apara in div-urile de mai jos datele lui?-->
+                <div class="account-details">
+                    <p>Ben Cline <br> 1234 S. Flestwood Mac Dr <br> Salt Lake City, UTB4109 <br>United States <br> +1 081 641 09 </p>
+                    <p>Ben Cline <br> C/ O Really Interactive <br> Salt Lake City, UTB4109 <br>United States <br> +1 081 641 09 </p>
+                </div>
+
+            </div>
+            <div class=" content payment-methods-container hidden ">
+                <h1>
+                    <p>Payment</p>
+                    <p>Methods</p>
+                </h1>
+                <div class="payment-type ">
+                    <ol class="cards-wrapper ">
+                        <li><img src="asset/card-1.png " alt="card visa "></li>
+                        <li><img src="asset/card-2.png " alt="card visa "></li>
+                        <li><img src="asset/card-3.png " alt="card visa "></li>
+                        <li class="card-plus ">
+                            <span class="add-card ">
+                                <img src="asset/icon-plus.png " alt="plus ">
+                                <p>ADD CARDS</p>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="content order-details-container hidden ">
+                <p>Your Orders/Order #30002</p>
+
+                <table style="width: 70%; ">
+                    <tr>
+                        <th style="font-size: 50px; text-align: start; color: #231f20; font: laca; ">Order <br> Details</th>
+                        <th></th>
+                        <th style="font-size: 20px; text-align: start; padding-top: 70px; color: #231f20; font: laca; ">Order <br> Cancelled</th>
+                    </tr>
+                    <tr>
+                        <td style="color: #231f20;
+                                    font: laca;
+                                    font-size: 1.5em;">Billing</td>
+                        <td style="padding-top: 100px;
+                                    color: #231f20;
+                                    font: laca;
+                                    font-size: 1.5em;">Rally Interactive <br> 244 W 300 N <br> Salt Lake City, Utah 84103 <br> United States <br> (801) 643-3595</td>
+                        <td style="color: #231f20;
+                                    font: laca;
+                                    font-size: 1.5em;
+                                    padding-top: 10px;">Payment Status: <br> Refunded </td>
+                    </tr>
+                    <tr>
+                        <td style="color: #231f20;
+                                    font: laca;
+                                    font-size: 1.5em; ">Shipping</td>
+                        <td style="padding-top: 100px;
+                                    color: #231f20;
+                                    font: laca;
+                                    font-size: 1.5em; ">Rally Interactive <br> 244 W 300 N <br> Salt Lake City, Utah 84103 <br> United States <br> (801) 643-3595</td>
+                        <td style="color: #231f20;
+                                    font: laca;
+                                    font-size: 1.5em;
+                                    padding-top: 10px; ">Payment Status: <br> Unfulfilled </td>
+                    </tr>
+                </table>
             </div>
         </section>
 
+
     </main>
-    <script src="resources/navigation.js"></script>
+    <script src="resources/navigation.js "></script>
 </body>
 
 </html>

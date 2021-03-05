@@ -4,42 +4,47 @@ body {
     margin: 0;
     padding: 0;
     font-size: 15px;
+    font: laca;
+    color: #231f20;
 }
 
 .container {
     width: 100%;
+    background-color: #f8f5f2;
     display: flex;
-}
-
-.top-bar ol {
-    float: right;
 }
 
 ol {
     list-style-type: none;
 }
 
-.top-bar-nav li {
+a {
     text-decoration: none;
-    display: inline;
+    color: #231f20;
 }
 
 .menu {
-    background-color: blue;
-    width: 30%;
+    background-color: #f2ede8;
+    width: 25%;
+}
+
+.top-logo {
+    width: 250px;
+    height: 50px;
 }
 
 .top-logo img {
-    width: 10em;
-}
-
-.logo-wrapper {
-    list-style: none;
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+    padding-top: 20px;
 }
 
 .logo-wrapper li {
-    width: 60px;
-    height: 60px;
+    padding-top: 100px;
+    padding-left: 100px;
+    width: 120px;
+    height: 120px;
 }
 
 li img {
@@ -47,17 +52,210 @@ li img {
     height: auto;
 }
 
-.your-orders {
-    background-color: blueviolet;
-    width: 70%;
+.menu-list {
+    padding-top: 30px;
+    margin-left: 100px;
+    margin-bottom: 80%;
+}
+
+.menu-list li {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+section {
+    width: 75%;
+}
+
+.top-bar {
+    float: right;
+    padding-right: 50px;
+}
+
+.top-bar-nav li {
+    display: inline;
+    margin-left: 30px;
+    font-size: 2em;
 }
 
 .your-orders-container {
-    z-index: 2;
+    z-index: 5;
+}
+
+.your-order-wrapper {
+    display: flex;
+}
+
+.your-order-table {
+    margin-left: 120px;
+    margin-top: 15px;
+}
+
+.your-order-img {
+    width: 300px;
+}
+
+.your-order-img img {
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 20px;
+    background-color: #e8e0d8;
+    padding-bottom: 80px;
+}
+
+.item-imp-wrapper {
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+    background-color: #e8e0d8;
+}
+
+.item-imp-wrapper img {
+    width: 70%;
+    height: 70%;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.h3 {
+    margin-left: 30px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-top: 10px;
 }
 
 .reward-status-container {
+    z-index: 4;
+}
+
+td p:first-child {
+    font-size: 25px;
+}
+
+td p {
+    font-weight: bold;
+}
+
+.text-table {
+    margin-left: -73%;
+}
+
+.icon-img-wrapper {}
+
+.icon-img-wrapper img {
+    width: 100px;
+    height: auto;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+
+.account-settings-container {
+    z-index: 3;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+form input:last-child {
+    width: 31%;
+    height: 50px;
+    background-color: #231f20;
+    color: #f2ede8;
+    padding: 10px;
+    border-color: #231f20;
+    border-style: ridge;
+}
+
+input {
+    width: 30%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: laca;
+    color: #231f20;
+    margin-right: 50px;
+    margin-top: 20px;
+    border-color: #f8f5f0;
+    border-style: ridge;
+}
+
+.account-details {
+    margin-left: 100px;
+    display: flex;
+}
+
+h2 {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.account-details p {
+    width: 28%;
+    background-color: #231f20;
+    color: #f2ede8;
+    margin-right: 50px;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    font-size: 1.5em;
+}
+
+.payment-methods-container {
+    z-index: 2;
+}
+
+h1 {
+    font-size: 4em;
+    line-height: 10px;
+    margin-left: 100px;
+    margin-top: 12%;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards-wrapper li {
+    width: 28%;
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+
+.card-plus {
+    background-color: #f2ede8;
+    position: relative;
+}
+
+.card-plus img {
+    width: 20%;
+    padding: 20%;
+    padding-left: 40%;
+}
+
+.add-card p {
+    position: absolute;
+    margin-top: -40px;
+    padding-left: 29%;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.order-details-container {
     z-index: 1;
+    margin-left: 150px;
+}
+
+.order-details-container p {
+    font-size: 1.5em;
+    margin-top: 10%;
 }
 
 .hidden {
@@ -65,5 +263,5 @@ li img {
 }
 
 .menu-item.selected {
-    color: chocolate
+    color: chocolate;
 }
