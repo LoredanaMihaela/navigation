@@ -17,6 +17,7 @@
     <main class="container">
         <aside class="menu">
             <div class="top-logo"><img src="asset/logo-boundary.png" alt="logo"></div>
+            <!-- exista vreun motiv pentru care avem o lista ordonata aici? logo-ul se modifica in functie de sectiune, structural, nu vedem niciodata o lista -->
             <ol class="logo-wrapper">
                 <li class=" logo your-orders-logo"><img src="asset/logo-vip.png" alt="Circle logo"></li>
                 <li class="logo reward-status-logo hidden"><img src="asset/logo-gold.png" alt="Circle logo"></li>
@@ -38,12 +39,14 @@
                     <li><a href="shop.html">SHOP</a></li>
                     <li><a href="search.html"><i class="fas fa-search"></i></a></li>
                     <li><a class="menu-item" data-content="your-orders-container" data-logo="your-orders-logo"><i class="fab fa-shopify"></i></i></a></li>
+                    <!-- un pic mai multa atentie la denumiri, te rog -->
                     <li><a href="signiIn"><i class="fas fa-sign-in-alt"></i></a></i>
                     </li>
                 </ol>
             </nav>
             <div class="content your-orders-container">
                 <h1>
+                    <!-- cate un cuvant nu reprezinta un paragraf, un pic mai multa atentie la semantica, te rog -->
                     <p>Your</p>
                     <p>Orders</p>
                 </h1>
@@ -92,9 +95,11 @@
                 </div>
             </div>
             <div class="content reward-status-container hidden">
+                <!-- tot acest continut face parte din h1? -->
                 <h1>
                     <p>Reward</p>
                     <p>Status</p>
+                    <!-- as dori ca partea asta de layout sa fie facuta printr-o alta tehnica, nicidecum tabel -->
                     <table style="width: 80%">
                         <tr>
                             <td style="font-size: 20px;
@@ -188,7 +193,10 @@
                 <h2>Addresses</h2>
                 <!--cum se poate face ca dupa ce clientul is introduce datale si apasa save,
                      sa imi apara in div-urile de mai jos datele lui?-->
-                <div class="account-details">
+                     <!-- cu js acum stii sa faci asta, iti selectezi elementele de mai jos si le modifici continutul in functie de valoare pe care o citesti din input-urile respective -->
+                    <!-- este o implementare FE, totusi daca vrem sa salvam datele avem nevoie de un server si un DB -->
+                     <div class="account-details">
+                         <!-- observ o oarecare afinitate pentru paragrafe, dar acestea nu sunt paragrafe, iar aceasta parte de layout poate fi structurata mult mai ok fara atatea <br>. Am invatat foarte multe concepte, de ce le alegi mereu pe cele mai la indemana, prima alegere? doar pt ca merge nu inseamna ca e cea mai corecta alegere si consider ca suntem aici sa invatam tocmai asta, nu?-->
                     <p>Ben Cline <br> 1234 S. Flestwood Mac Dr <br> Salt Lake City, UTB4109 <br>United States <br> +1 081 641 09 </p>
                     <p>Ben Cline <br> C/ O Really Interactive <br> Salt Lake City, UTB4109 <br>United States <br> +1 081 641 09 </p>
                 </div>
@@ -216,6 +224,7 @@
             <div class="content order-details-container hidden ">
                 <p>Your Orders/Order #30002</p>
 
+                <!-- table + inline styling nu recomand sub nici o forma ca si tehnica de layout pt web. de ce ai ales sa faci asta? -->
                 <table style="width: 70%; ">
                     <tr>
                         <th style="font-size: 50px; text-align: start; color: #231f20; font: laca; ">Order <br> Details</th>
